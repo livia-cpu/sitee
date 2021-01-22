@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>MAKESL.com</title>
+         <link rel="stylesheet" href="estilo.css">
+    </head>
+    <body>
+        <form action="processousuario.php" method="POST"></form>
+        <div id="paii"> 
+          <div id="cabeçalho">
+            <div><img id="logon" src = "logon.jpg" Alt= “foto”>
+            </div> 
+        </div> 
+        
+   <div id="linha1">
+            <div><h2><a href="cadastrodeusuario.html">Cadastro de usuario</a></h2></div>
+           
+            <div><h2><a href="cadastrodeproduto.html">Cadastro de produto</a></h2></div>
+          
+            <div><h2> <a href="paginadelogin.html">Cadastro de login</a></h2></div>
+            <div><h2> <a href="mapadosite.html">Sobre a empresa</a></h2></div>
+            <div><label id="pesquisa"> Pesquisar:</label>
+                <input type="text" name="Pesquisar"></div>
+            <div><a href="carrinho.html"><img id="car" src = "carrinho.jpg" Alt= "foto"></a></div>
+        </div> 
+        
+         <h1>CADASTRO DO USUARIO</h1>
+         <h2>Ainda não é cadastrado no site?</h2>
+         <p>Faça agora mesmo o seu cadastro, é simples e rápido!</p>
+         
+         <form method = "POST" action="processodecadastro.php">
+
+         <label>Nome:</label>
+         <input type="text" name="Nome" placeholder="Digite seu nome"> <br><br>
+
+        
+        <label>RG:</label><br>
+        <input type="text" name="RG" placeholder="Digite seu RG"><br><br>
+        
+        <label>CPF:</label><br>
+        <input type="text" name="CPF"  placeholder="Digite seu CPF"><br><br>
+        
+        
+        <label>Data de nascimento:</label><br>
+        <input type="text" name="Datadenascimento"  placeholder="Digite a data de nascimento"><br><br>
+        
+        
+        <label>Telefone:</label><br>
+        <input type="tel" name="Telefone"  placeholder="Digite seu telefone"><br><br>
+        
+        
+        <label>Email:</label><br>
+        <input type="text" name="Email"  placeholder="Digite seu Email"><br><br>
+        
+        
+        <label>Endereço:</label><br>
+        <input type="text" name="Endereco"  placeholder="Digite seu endereço"><br><br>
+        
+        
+          
+        <input type="submit" value="Cadastrar">
+    </form>
+        
+         <a href="index.html">Voltar</a>
+        
+         <div  class="rodape" >
+         <div><a href="whats.jpg"><img class="cab" src = "whats.jpg" Alt= "foto"></a></div>
+          <div><a href="face.jpg"><img class="cab" src = "face.jpg" Alt= "foto"></a></div>
+           <div><a href="insta.jpg"><img class="cab" src = "insta.jpg" Alt= "foto"></a></div>
+           <div><h2><a id="adm" href="paginaAdm.html">Administrador</a></h2></div>
+           <div class="a4"><p>AJUSTE E SUPORTE</p></div>
+            <div class="a4"> <p>Politica de privacidade</p></div>
+              <div class="a4"> <p>Politica de pagamento</p></div>
+             <div class="a4"> <p>Troca e devoluçao</p></div>
+          
+            <div><a href="pagamento.png"><img id="lar" src = "pagamento.png" Alt= "foto"></a></div>
+            
+           </div>
+        </div>
+    </body>
+</html>
