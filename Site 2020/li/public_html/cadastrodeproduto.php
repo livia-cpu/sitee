@@ -1,0 +1,71 @@
+<?php
+session_start();
+?>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>MAKES.com</title>
+        <link rel="stylesheet" href="estilo.css">
+
+    </head>
+    <body>
+       
+        <div id="paii">
+    <div id="cabeçalho">
+        <div><img id="logon" src = "logon.jpg" Alt= “foto”></div> 
+    </div> 
+    <div id="linha1">
+        <div><h2><a href="cadastrodeusuario.html">Cadastro de usuario</a></h2></div>
+        <div><h2><a href="cadastrodeproduto.html">Cadastro de produto</a></h2></div>
+        <div><h2> <a href="paginadelogin.html">Cadastro de login</a></h2></div>
+        <div><h2> <a href="mapadosite.html">Sobre a empresa</a></h2></div>
+        <div><label id="pesquisa"> Pesquisar:</label> <input type="text" name= "Pesquisar"></div>
+        <div><a href="carrinho.html"><img id="car" src = "carrinho.jpg" Alt= "foto"></a></div>
+    </div>
+
+
+    <?php
+if(isset($_SESSION['msg'])){
+echo $_SESSION['msg'];
+unset($_SESSION ['msg']);
+}
+?>
+
+
+        <h1>CADASTRO DE PRODUTO</h1><br>
+    <form method="POST" action="processodoproduto.php">
+        
+        <label>Descriçao:</label>
+        <input type="text" name="Descricaodoproduto" placeholder="Descrição do produto"><br><br>
+
+        <label>Preço do produto:</label>
+
+        <input type="text" name="Precodoproduto" placeholder="Preço do produto"><br><br>
+
+        <label>Ficha tecnica:</label>
+
+        <input type="text" name="Fichatecnica" placeholder="Ficha tecnica do produto"><br><br>
+        
+        <input type="submit" value="Cadastrar">
+
+    </form>
+              
+        
+       
+
+          <div  class="rodape" >
+         <div><a href="whats.jpg"><img class="cab" src = "whats.jpg" Alt= "foto"></a></div>
+          <div><a href="face.jpg"><img class="cab" src = "face.jpg" Alt= "foto"></a></div>
+           <div><a href="insta.jpg"><img class="cab" src = "insta.jpg" Alt= "foto"></a></div>
+           <div><h2><a id="adm" href="paginaAdm.html">Administrador</a></h2></div>
+           <div class="a4"><p>AJUSTE E SUPORTE</p></div>
+            <div class="a4"> <p>Politica de privacidade</p></div>
+              <div class="a4"> <p>Politica de pagamento</p></div>
+             <div class="a4"> <p>Troca e devoluçao</p></div>
+          
+            <div><a href="pagamento.png"><img id="lar" src = "pagamento.png" Alt= "foto"></a></div>
+           </div> 
+           </div>
+    </body>
+</html>
